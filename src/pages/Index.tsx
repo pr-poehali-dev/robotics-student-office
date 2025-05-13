@@ -29,7 +29,9 @@ const Index = () => {
     <div className="min-h-screen bg-slate-50">
       {/* Навигационная панель */}
       <nav
-        className={`fixed w-full z-50 transition-all duration-300 ${scrollY > 50 ? "bg-white shadow-md py-2" : "bg-transparent py-4"}`}
+        className={`fixed w-full z-50 transition-all duration-300 ${
+          scrollY > 50 ? "bg-white shadow-md py-2" : "bg-transparent py-4"
+        }`}
       >
         <div className="container mx-auto flex justify-between items-center px-4">
           <div className="flex items-center">
@@ -476,8 +478,17 @@ const Index = () => {
             робототехникой, присоединиться к нашему бюро. Неважно, есть ли у вас
             опыт — главное желание учиться и создавать.
           </p>
-          <Button className="bg-[#9b87f5] hover:bg-[#7E69AB] text-white px-8 py-6 text-lg">
-            Стать частью команды
+          <Button
+            className="bg-[#9b87f5] hover:bg-[#7E69AB] text-white px-8 py-6 text-lg"
+            asChild
+          >
+            <a
+              href="https://t.me/stankin_robotics"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Стать частью команды
+            </a>
           </Button>
         </div>
       </section>
