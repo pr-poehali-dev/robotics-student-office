@@ -97,13 +97,13 @@ const Index = () => {
             </p>
             <div className="flex flex-wrap gap-4">
               <Button className="bg-[#9b87f5] hover:bg-[#7E69AB] text-white px-8 py-6">
-                Узнать больше
+                <a href="#about">Узнать больше</a>
               </Button>
               <Button
                 variant="outline"
                 className="border-white text-white hover:bg-white/10 px-8 py-6"
               >
-                Наши проекты
+                <a href="#roboturgi">Наши проекты</a>
               </Button>
             </div>
           </div>
